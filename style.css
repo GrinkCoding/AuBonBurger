@@ -1,0 +1,691 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Playfair+Display&family=Raleway&display=swap');
+
+/* font-family: 'Dancing Script', cursive;
+font-family: 'Playfair Display', serif;
+font-family: 'Raleway', sans-serif; */
+
+
+/* Général */
+*,
+::before,
+::after{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+body{
+  background-color: #000;
+}
+
+.titre2{
+  font-family: 'Playfair Display', serif;
+  font-size: 4.5rem;
+  font-weight: 200;
+  color:#fff;
+  text-align: center;
+}
+
+.titre3{
+  font-family: 'Playfair Display', serif;
+  font-size: 4rem;
+  font-weight: 200;
+  color:#fff;
+  text-align: center;
+}
+
+ .titre2 span, .titre3 span{
+  border-bottom: .5rem solid #FF8427;
+}
+
+  /* header */
+
+  
+  .header{
+    width: 100%;
+    height: 80rem;
+    background-image: url(ressource/header3.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 50% 30%;
+    color:#fff;
+    position: relative;
+    background-color: red;
+  }
+
+  .navbar{
+    width: 100%;
+    height: 10rem;
+    background: #000;
+    position: fixed;
+    color:#FF8427;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 1;
+  }
+
+  .logo{
+    font-size: 5rem;
+    font-family: 'Dancing Script', cursive;
+    margin-left: 5rem;
+    color:#FF8427;
+  }
+
+
+  .link ul{
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .link-item{
+    font-size: 3rem;
+    font-family: 'Playfair Display', serif;
+    list-style: none;
+    display: flex;
+  }
+
+  .link-item a{
+    text-decoration: none;
+    color:#FF8427;
+    padding: 0 2rem;
+    transition : color .5s;
+  }
+
+  .link-item a:hover{
+    color : #F1E8B8;
+  }
+
+  .link-item:last-child{
+    margin-right: 10rem;
+  }
+  
+  .titre{
+    color:#fff;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 6rem;
+    text-align: center;
+    line-height: 7.6rem;
+    font-family: 'Raleway', sans-serif; 
+  }
+
+  .header .button{
+    background-color: #FF8427;
+    padding: 1.5rem .6rem;
+    border-radius: .5rem;
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    outline:none;
+    border:none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    cursor:pointer;
+    transition : background-color .5s;
+  }
+  
+  .header .button a{
+    text-decoration: none;
+    color:#000;
+  }
+
+  .header .button:hover{
+    background-color: #F1E8B8;
+  }
+
+/* Notre Histoire */
+#notreHistoire{
+  color:#fff;
+  height: 99rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.paragraph-history{
+  font-family: 'Raleway', sans-serif; 
+  font-size: 2.5rem;
+  margin: 5rem 20rem;
+  text-align: justify;
+}
+
+/* Parallax1 */
+  .parallax1{
+     width:100%;
+    height : 40rem;
+    background: url("ressource/parallax.jpg");
+    background-repeat : no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  
+  .parallax2{
+    width:100%;
+   height : 40rem;
+   background: url("ressource/parallax2.jpg");
+   background-repeat : no-repeat;
+   background-size: cover;
+   background-position: center;
+   background-attachment: fixed;
+ }
+
+  /* Nos spécialités */
+
+#nosSpecialites{
+  width: 100%;
+  height: 292rem;
+}
+
+#nosSpecialites .titre2{
+  margin: 10.8rem 0 24.6rem 0;
+}
+
+.container{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 22.9rem;
+}
+
+.box{
+  display:grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap : 14rem; 
+}
+
+.box:nth-child(1), .box:nth-child(3){
+  margin-left: 5rem;
+}
+
+.box:nth-child(2){
+  display:flex;
+  justify-content: flex-end;
+  margin-right: 5rem;
+}
+
+
+.box-description{
+  color: #fff;
+  font-size: 2.5rem;
+  font-family: 'Playfair Display', serif;
+  text-align: justify;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.box-description p{
+  line-height: 150%;
+}
+
+.box-img, .box-description{
+  height: 61.8rem;
+  border: .4rem solid #FF8427;
+}
+
+.box-img{
+  width: 54.2rem;
+}
+
+.box-description{
+  width: 43rem;
+}
+
+
+.img-items{
+  width: 100%;
+  height: 100%;
+}
+
+/* Suivez-nous */
+
+#suivezNous{
+  width: 100%;
+  height: 100rem;
+  color:#fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.contain-text{
+  width: 89rem;
+}
+.text{
+  font-size: 2.8rem;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+}
+
+.inputEmail{
+  width: 66.1rem;
+  height: 9rem;
+  font-size: 3rem;
+  outline: none;
+  padding: 1rem;
+  margin-right: 2rem;
+  font-family: 'Playfair Display', serif;
+}
+
+.inputButton{
+  height: 9rem;
+  width: 20.7rem;
+  font-size: 3rem;
+  background-color:#FF8427;
+  font-family: 'Playfair Display', serif;
+  border:none;
+  outline: none;
+  border-radius: .5rem;
+  cursor: pointer;
+  transition : background-color .5s;
+}
+
+.inputButton:hover{
+  background-color: #F1E8B8;
+}
+
+.separation{
+  background-color:#FF8427;
+  width: 111.9rem;
+  height: .5rem;
+  text-align: center;
+}
+
+.copiyright{
+  color:#FF8427;
+  font-size: 2rem;
+  font-family: 'Playfair Display', serif;
+  /* margin-top: 2rem; */
+}
+
+.logo-footer{
+  font-size: 5rem;
+  font-family: 'Dancing Script', cursive;
+  color:#FF8427;
+}
+
+.media{
+  width: 30rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.media-item{
+  width: 5.5rem;
+  transform:scale(1);
+  transition: all .5s;
+}
+
+.media-item:hover{
+  transform:scale(1.1);
+}
+
+.twitter{
+  margin-top: .5rem;
+}
+
+.footer{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.box-footer{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.copiyright{
+  color:#FF8427;
+  font-size: 2rem;
+  font-family: 'Playfair Display', serif;
+  margin-top: 2rem;
+}
+
+
+/* Media querie */
+
+
+/*1024px*/
+@media screen and (max-width : 64em){ 
+  html{
+    font-size: 55%;
+  }
+
+  /* header */
+  .header{
+    height: 70rem;
+    background-color: black;
+  }
+
+  /* Nos spécialités */
+  #nosSpecialites{
+    height: 240rem;
+  }
+
+  #nosSpecialites .titre2{
+    margin: 10rem 0 15rem 0;
+  }
+
+  .container{
+    grid-gap: 10rem;
+  }
+
+  .box{
+    grid-gap : 6rem;
+    display : flex;
+    justify-content: center;
+    margin-left: 0rem;
+  }
+
+
+  .box:nth-child(1), .box:nth-child(3){
+    margin-left: 2rem;
+  }
+  
+  .box:nth-child(2){
+    display:flex;
+    justify-content: center;
+    margin-right: 2rem;
+    margin-left: 4rem;
+  } 
+
+  /* Suivez-nous */
+
+  #suivezNous{
+    height: 80rem;
+
+  }
+
+  .inputEmail{
+    width: 50rem;
+    height: 7rem;
+    font-size: 2.5rem;
+    margin-right: 2rem;
+  }
+  
+  .inputButton{
+    height: 7rem;
+    width: 17rem;
+    font-size: 2.5rem;
+  }
+
+  .separation{
+    width: 100%;
+  }
+
+}
+
+/* 1000px */
+@media screen and (max-width : 62.5em){
+
+  html{
+    font-size: 50%;
+  }
+
+  .logo{
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar{
+    justify-content:center;
+    height: 12rem;
+  }
+
+  .link-item{
+    padding-bottom: 1rem;
+  }
+
+
+  .link-item:last-child{
+    margin-right: 0;
+  }
+
+}
+
+/* 880px */
+@media screen and (max-width : 55em){
+
+  .titre{
+    font-size: 4.5rem;
+    line-height: 5rem;
+  }
+
+  .header .button{
+    font-size: 2.5rem;
+    outline:none;
+    border:none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    cursor:pointer;
+    transition : background-color .5s;
+  }
+
+  /* Nos spécialités */
+
+  #nosSpecialites{
+    height: 100%;
+  }
+
+  #nosSpecialites .titre2{
+    margin: 10rem 0;
+  }
+
+  .container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 5rem;
+    margin-bottom: 10rem;
+  }
+
+  .box{
+    display : flex;
+    flex-wrap: wrap;
+    margin-left: 0;
+    grid-gap:5rem;
+  }
+
+  .box:nth-child(1), .box:nth-child(3){
+    margin-left: 0;
+  }
+
+  .box:nth-child(2){
+    margin-right: 0;
+    margin-left: 0;
+  }
+  
+  .box-description{
+    width: 54.2rem;
+  }
+
+  .box-description{
+    font-size: 2.5rem;
+    text-align: justify;
+    padding: 3rem;
+    justify-content: space-around;
+  }
+  
+  .box-description p{
+    line-height: 150%;
+  }
+
+   /* Suivez-nous */
+
+  .media-item{
+    width: 5rem;
+  } 
+
+}
+
+
+/* 850px */
+@media screen and (max-width : 53.125em){
+
+  /* header */
+  .header{
+    max-width: 100%;
+    height: 80rem;
+    background-image: url(ressource/headerSmall.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position:center;
+    color:#fff;
+    position: relative;
+  } 
+
+  /* Notre histoire */
+
+  .paragraph-history{ 
+    font-size: 2rem;
+    margin: 5rem 15rem;
+  }
+
+  #notreHistoire{
+    height: 90rem;
+  }
+  
+  /* Parallax */
+
+  .parallax1, .parallax2{
+    height: 35rem;
+  }
+   /* Suivez-nous */
+   .contain-text{
+    width: 100%;
+  }
+  .text{
+    font-size: 2rem;
+  }
+
+}
+
+/* 720px */
+@media screen and (max-width : 45em){
+  .header{
+    height: 75rem;
+  }
+
+.box-description{
+  font-size: 2rem;
+  padding: 3rem;
+}
+
+
+.box-description{
+  color: #fff;
+  /* font-size: 2.5rem; */
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.box-description p{
+  line-height: 200%;
+}
+
+}
+
+/* 580px*/
+@media screen and (max-width : 36.25em){
+
+  html{
+    font-size: 45%;
+  }
+
+  .titre2{
+    font-size: 3.5rem;
+  }
+
+  .titre3{
+    font-size: 3.5rem;
+  }
+
+  /* header */
+  .titre{
+    font-size: 4rem;
+    line-height: 6rem;
+  }
+
+  /* Notre histoire */
+
+  .paragraph-history{ 
+    margin: 5rem 7rem;
+  }
+
+  #notreHistoire{
+    height: 100%;
+    margin: 5rem 0;
+  }
+}
+
+/* 530px */
+@media screen and (max-width : 33.125em){
+  .titre2{
+    font-size: 3rem;
+  }
+
+  .titre3{
+    font-size: 3rem;
+  }
+
+  /* header */
+
+  .header{
+    height: 70rem;
+  }
+
+  .titre{
+    font-size:3.5rem;
+    line-height: 6rem;
+  }
+
+    /* Suivez-nous */
+
+    #suivezNous{
+      height: 65rem;
+    }
+  
+    .inputEmail{
+      width: 40rem;
+      height: 7rem;
+      font-size: 2rem;
+      margin-right: 2rem;
+    }
+    
+    .inputButton{
+      height: 7rem;
+      width: 15rem;
+      font-size: 2rem;
+    }
+
+    /* parallax */
+    .parallax1, .parallax2{
+      height: 30rem;
+    }
+
+}
+
+
