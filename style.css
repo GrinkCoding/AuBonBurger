@@ -545,14 +545,11 @@ body{
 
   /* header */
   .header{
-    max-width: 100%;
     height: 80rem;
     background-image: url(ressource/headerSmall.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     background-position:center;
-    color:#fff;
-    position: relative;
   } 
 
   /* Notre histoire */
@@ -662,6 +659,10 @@ body{
     line-height: 6rem;
   }
 
+  .header .button{
+    font-size: 2.5rem;
+  }
+
     /* Suivez-nous */
 
     #suivezNous{
@@ -688,4 +689,78 @@ body{
 
 }
 
+/* 485px */
+@media screen and (max-width : 33.125em){
+
+  /* header */
+
+  .header{
+    background-position:top;
+  }
+
+  .navbar{
+    height: 22rem;
+  }
+
+  .titre{
+    top:50%;
+  }
+
+  .header .button{
+    font-size: 2rem;
+    top: 75%;
+  }
+
+  .link ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+    /* parallax */
+    .parallax1, .parallax2{
+      height: 25rem;
+    }
+
+  /* Suivez-nous */
+
+  #suivezNous{
+    height: 60rem;
+  }
+
+  form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .inputEmail{
+    margin-right: 0;
+    margin-bottom: 3rem;
+  }
+
+  .logo-footer{
+    display:none;
+  }
+
+  .media-item{
+    width: 4rem;
+  } 
+
+}
+
+/* 465pixel */
+@media screen and (max-width : 29.0625em){
+  html{
+    font-size: 40%;
+  }
+}
+
+/* 350pixel */
+@media screen and (max-width : 21.875em){
+  .box-img, .box-description{
+    width: 100%;
+  }
+}
 
