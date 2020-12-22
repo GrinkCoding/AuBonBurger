@@ -364,16 +364,22 @@ body{
 
 /* Media querie */
 
+/* 1400px */
+@media screen and (max-width : 87.5em){
+  .header{
+    height: 70rem;
+  }
+}
 
-/*1024px*/
-@media screen and (max-width : 64em){ 
+/* 1200 */
+@media screen and (max-width : 78.125em){ 
   html{
     font-size: 55%;
   }
 
   /* header */
   .header{
-    height: 70rem;
+    /* height: 70rem; */
     background-color: black;
   }
 
